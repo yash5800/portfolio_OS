@@ -4,7 +4,7 @@ import { pushWallpaper } from '../libs/DB_data';
 import Wallpapers from './settings_tabs/Wallpapers';
 import Container from './Container';
 
-const Settings = () => {
+const Settings = ({id}) => {
   const {wallpaper,setWallpaper} = React.useContext(MainContext);
   const [tab,setTab] = React.useState('wallpapers');
   
@@ -16,7 +16,7 @@ const Settings = () => {
   }
   
   return (
-    <Container title={"settings"}>
+    <Container title={"settings"} id={id}>
       <div className='flex justify-start items-start max-sm:flex-col flex-row '>
          <ul className='flex flex-col gap-2 px-3'>
            <li className='cursor-pointer PixelGame mystroke text-purple-500'>Wallpapers</li>

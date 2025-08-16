@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Container from './Container'
 import { skills } from '../libs/desktop'
 
-const About = () => {
+const About = ({id}) => {
    const [profileImage, setProfileImage] = React.useState('icon.webp');
 
   useEffect(()=>{
@@ -31,7 +31,7 @@ const About = () => {
 
 
   return (
-    <Container title="about">
+    <Container title="about" id={id}>
       <div className='flex justify-start items-center flex-col gap-4 px-4 '>
         <div className='w-40 h-40 rounded-full overflow-hidden shadow-md shadow-blue-500 border-2 border-blue-500 profile'>
            <img src={profileImage} alt="About" className='w-full h-full object-cover scale-150' />

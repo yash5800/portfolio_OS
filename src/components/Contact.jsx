@@ -1,9 +1,9 @@
 import React from 'react'
 import Container from './Container'
 
-const Contact = () => {
+const Contact = ({id}) => {
   return (
-    <Container title="contact">
+    <Container title="contact" id={id}>
       <div className='flex justify-start items-center flex-col gap-4 px-4 '>
         <h1 className='text-3xl font-bold text-center text-blue-500 gap-3 flex ArcadeClassic myshadow'>
           Contact Me

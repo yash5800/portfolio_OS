@@ -6,7 +6,7 @@ const Folder = ({foldertab,id}) => {
   return (
     <Container title={foldertab} id={id}>
        <div className='flex justify-center items-center h-full w-full'>
-             <Projects />
+             {foldertab === 'projects' && <Projects />}
        </div>
     </Container>
   )
