@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ArcadeClassic';
+  src: url('/fonts/arcadeclassic/ARCADECLASSIC.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ByteBounce';
+  src: url('/fonts/bytebounce/ByteBounce.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixelGame';
+  src: url('/fonts/pixel-game/Pixel Game.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ArcadeClassic{
+  font-family: 'ArcadeClassic', Arial, sans-serif;
+}
+.ByteBounce{
+  font-family: 'ByteBounce', Arial, sans-serif;
+}
+.PixelGame{
+  font-family: 'PixelGame', Arial, sans-serif;
+}
+
+
+@layer utilities {
+    .myborder{
+      text-shadow:
+         -1px -1px 0 black,
+          1px -1px 0 black,
+         -1px  1px 0 black,
+          1px  1px 0 black;
+    }
+    .myshadow{
+      text-shadow: 2.5px 2.5px 1px rgba(0, 0, 0);
+    }
+    .mystroke{
+      -webkit-text-stroke: 0.1px black;
+    }
+
+    .rotate {
+      animation: rotation 5s ease-in-out infinite;
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .overflow-scroll {
+      scrollbar-width: thin;
+      scrollbar-color: #4b5563 transparent;
+    }
+
+    .hiddenScroll{
+      scrollbar-width: 0;
+    }
+
+    .rotatep{
+       transform: rotate(90deg);
+       transition: rotate 0.5s ease-in-out;
+    }
+
+    
+}
