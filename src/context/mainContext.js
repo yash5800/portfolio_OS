@@ -4,7 +4,14 @@ const MainContext = React.createContext({
   wallpaper: '',
   setWallpaper: () => {},
   page: '',
-  setPage: () => {}
+  setPage: () => {},
+  windows: [],
+  setWindows: () => {},
+  order: [],
+  setOrder: () => {},
+  addWindow: () => {},
+  bringToFront: () => {},
+  removeWindow: () => {}
 });
 
 export const ContainerContext = createContext({

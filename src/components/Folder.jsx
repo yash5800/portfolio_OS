@@ -2,11 +2,11 @@ import React from 'react'
 import Container from './Container'
 import Projects from './folder_tabs/Projects'
 
-const Folder = ({foldertab}) => {
+const Folder = ({foldertab,id}) => {
   return (
-    <Container title={foldertab}>
+    <Container title={foldertab} id={id}>
        <div className='flex justify-center items-center h-full w-full'>
-             {foldertab === 'projects' && <Projects />}
+             <Projects />
        </div>
     </Container>
   )
