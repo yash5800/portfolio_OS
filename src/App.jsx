@@ -15,6 +15,7 @@ const App = () => {
   const [order, setOrder] = React.useState([]);
 
   useEffect(() => {
+    let interval;
     const fetchWallpaper = async () => {
       try {
         const wallpaper = await getWallpaper();
@@ -22,10 +23,13 @@ const App = () => {
       } catch (error) {
         console.error("Error fetching wallpaper:", error);
       } finally {
-        setLoading(false); 
+        interval = setInterval(()=>{
+          setLoading(false);
+        },2000)
       }
     };
     fetchWallpaper();
+    return () => clearInterval(interval);
   }, []);
 
     const addWindow = (window, id) => {
@@ -43,18 +47,58 @@ const App = () => {
     };
 
   const bringToFront = (id) => {
-    console.log("Bringing window to front:", id);
     setOrder((prev) => [...prev.filter((wid) => wid !== id), id]);
   };
 
   const removeWindow = (id) => {
-    console.log("Removing window:", id);
+    setPage('')
     setWindows((prev) => prev.filter((win) => win.id !== id));
     setOrder((prev) => prev.filter((wid) => wid !== id));
   };
 
+  const handleDrag = (e, id) => {
+      e.preventDefault();
+      bringToFront(id);
+
+      const winIndex = windows.findIndex((w) => w.id === id);
+      if (winIndex === -1) return;
+
+      // Detect whether it's touch or mouse
+      const startX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
+      const startY = e.type === "touchstart" ? e.touches[0].clientY : e.clientY;
+
+      const startTop = windows[winIndex].top || 100;
+      const startLeft = windows[winIndex].left || 100;
+
+      const handleMove = (ev) => {
+        const clientX = ev.type === "touchmove" ? ev.touches[0].clientX : ev.clientX;
+        const clientY = ev.type === "touchmove" ? ev.touches[0].clientY : ev.clientY;
+
+        const newTop = startTop + (clientY - startY);
+        const newLeft = startLeft + (clientX - startX);
+
+        setWindows((prev) =>
+          prev.map((w, i) =>
+            i === winIndex ? { ...w, top: newTop, left: newLeft } : w
+          )
+        );
+      };
+
+      const handleEnd = () => {
+        document.removeEventListener("mousemove", handleMove);
+        document.removeEventListener("mouseup", handleEnd);
+        document.removeEventListener("touchmove", handleMove);
+        document.removeEventListener("touchend", handleEnd);
+      };
+
+      document.addEventListener("mousemove", handleMove);
+      document.addEventListener("mouseup", handleEnd);
+      document.addEventListener("touchmove", handleMove, { passive: false });
+      document.addEventListener("touchend", handleEnd);
+  };
+
   return (
-    <MainContext.Provider value={{ wallpaper, setWallpaper, page, setPage, windows, setWindows, order, setOrder, addWindow, bringToFront, removeWindow}}>
+    <MainContext.Provider value={{ wallpaper, setWallpaper, page, setPage, windows, setWindows, order, setOrder, addWindow, bringToFront, removeWindow, handleDrag }}>
       {loading ? (
         <div className="h-screen w-screen flex flex-col justify-center items-center bg-black text-white">
           <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 mb-4"></div>

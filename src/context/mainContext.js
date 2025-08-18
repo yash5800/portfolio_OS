@@ -11,7 +11,8 @@ const MainContext = React.createContext({
   setOrder: () => {},
   addWindow: () => {},
   bringToFront: () => {},
-  removeWindow: () => {}
+  removeWindow: () => {},
+  handleDrag: () => {},
 });
 
 export const ContainerContext = createContext({

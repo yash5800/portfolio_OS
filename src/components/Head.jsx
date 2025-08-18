@@ -18,7 +18,11 @@ const Head = () => {
   return (
     <div className='w-full bg-gray-800 flex justify-between items-center max-sm:flex-col px-2 relative'>
       <ul className='flex justify-center items-center flex-row gap-3 px-3 mt-1 text-white text-[19px] ByteBounce'>
-        <img src="items\home.webp" alt="Home" className='w-[14px] h-[14px] cursor-pointer' onClick={() => setPage('')} />
+        <img src="icon.webp" alt="pic" className='w-[25px] cursor-pointer rounded-full max-sm:absolute max-sm:w-[40px] max-sm:top-5 max-sm:left-5 hover:scale-110'
+         onClick={() => {}}
+         draggable={false}
+         onContextMenu={(e) => e.preventDefault()} // disable right click
+         />
         <li className='cursor-pointer hover:text-red-500' onClick={() => {
           const id = Date.now();
           addWindow(<About id={id} />, id);

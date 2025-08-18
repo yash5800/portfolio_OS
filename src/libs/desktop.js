@@ -1,11 +1,7 @@
  
  export const desktop = [
   'projects',
-  'documents',
-  'downloads',
-  'music',
-  'pictures',
-  'videos'
+  'packages'
  ]
 
  export const wally = [
@@ -24,5 +20,5 @@ export const skills = {
     tools : ['Git','Postman'],
     databases : ['MongoDB','SQL'],
     applications : ['Web Development','Mobile Development'],
-    other : ["AI Agents","Machine Learning","Blender 3D Modeling"]
+    other : ["AI Agents","Machine Learning","Blender 3D Modeling",'npm packages']
 }

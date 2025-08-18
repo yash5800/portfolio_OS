@@ -7,7 +7,10 @@ const Wallpapers = ({  wallpaper, handleClickWal }) => {
   return (
           <div className='flex justify-center items-center flex-col gap-4 '>
             <div className='flex justify-center items-center gap-3 max-sm:flex-col'>
-              <img src={`wallpapers/${wallpaper}`} alt="Preview" className={`${isMobile ? 'w-[150px] h-[150px]' : 'w-[230px] h-[200px]'} object-cover rounded-lg`} />
+              <img src={`wallpapers/${wallpaper}`} alt="Preview" className={`${isMobile ? 'w-[150px] h-[150px]' : 'w-[230px] h-[200px]'} object-cover rounded-lg`} 
+                draggable={false}
+                onContextMenu={(e) => e.preventDefault()} // disable right click
+              />
               <p className='ArcadeClassic text-blue-400 myshadow'>Active Wallpaper</p>
             </div>
             <div className="flex gap-2 flex-wrap justify-center items-center ">
@@ -19,6 +22,8 @@ const Wallpapers = ({  wallpaper, handleClickWal }) => {
                     src={`wallpapers/${img}`}
                     alt={`Wallpaper ${index + 1}`}
                     className={`${isMobile?'w-[70px] h-[70px]':'w-[100px] h-[100px]'} object-cover rounded-lg hover:scale-110 transition-all duration-200`}
+                    draggable={false}
+                    onContextMenu={(e) => e.preventDefault()} // disable right click
                   />
                 ))
               }
