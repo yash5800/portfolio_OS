@@ -137,7 +137,7 @@ export const projectsData = [
         role:"Developer"
       },
       {
-        name:"B. Sai Karthik Nehru(Bskn)",
+        name:"Bskn",
         role:"Designer",
         github:"https://github.com/Bskn1411"
       }
@@ -145,11 +145,13 @@ export const projectsData = [
   },
   {
     title:"Library",
-    Description:`I fixed some issues in our college library website and database, working together with my friends to resolve the bugs. The website was originally developed by our highly dedicated team. The main bugs I mentioned earlier were related to inserting and deleting student records through the user interface. The details were not updating in the database tables due to incorrect SQL queries and PHP syntax errors.We examined the code thoroughly and discovered that the issue was caused by the way the backend handled data. We also found that the details of students from past years were not being deleted properly. To fix this, we implemented a logical approach to delete student data based on batch numbers, separating regular and lateral entry students. I suggested to our Sir that, instead of manually deleting old records, it would be more efficient to delete them automatically. I built the logic for this feature and demonstrated it to him. Sir then requested an update so that records older than eight years would be automatically deleted. I implemented the change as he suggested.Additionally, I created a manual deletion method where records could be removed using a student’s roll number. This was useful in cases where a student had been expelled or left the college before completing their batch. We fixed all problematic SQL queries, ensured that data insertion and deletion worked correctly, and made minor UI improvements.After implementing these changes, we tested the website thoroughly. Everything worked as expected, and we were happy with the results, feeling proud of our teamwork. Due to our efficient work, our Library Sir requested us to create an entirely new version of the website, as the old version had too many limitations. We successfully built the new website, updated the UI design, and optimized the SQL queries for better performance.`,
+    Description:`I fixed some issues in our college library website and database, working together with my friends to resolve the bugs. The website was originally developed by our highly dedicated team. The main bugs I mentioned earlier were related to inserting and deleting student records through the user interface. The details were not updating in the database tables due to incorrect SQL queries and PHP syntax errors.
+    We examined the code thoroughly and discovered that the issue was caused by the way the backend handled data. We also found that the details of students from past years were not being deleted properly. To fix this, we implemented a logical approach to delete student data based on batch numbers, separating regular and lateral entry students. I suggested to our Sir that, instead of manually deleting old records, it would be more efficient to delete them automatically. I built the logic for this feature and demonstrated it to him. Sir then requested an update so that records older than eight years would be automatically deleted. I implemented the change as he suggested.Additionally, I created a manual deletion method where records could be removed using a student’s roll number. This was useful in cases where a student had been expelled or left the college before completing their batch. We fixed all problematic SQL queries, ensured that data insertion and deletion worked correctly, and made minor UI improvements.After implementing these changes, we tested the website thoroughly. Everything worked as expected, and we were happy with the results, feeling proud of our teamwork. Due to our efficient work, our Library Sir requested us to create an entirely new version of the website, as the old version had too many limitations. We successfully built the new website, updated the UI design, and optimized the SQL queries for better performance.`,
     duration:{
       start:"?",
       end:"?"
     },
+    link:"https://srgec-library.great-site.net/?i=1",
     github:"https://github.com/Bskn1412/library",
     skills:["PHP","Sql","Html5","CSS","JavaScript"],
     contributer:[
@@ -163,7 +165,7 @@ export const projectsData = [
         github:"https://github.com/syam-bukkuru"
       },
       {
-        name:"B. Sai Karthik Nehru(Bskn)",
+        name:"Bskn",
         role:"Developer | Designer",
         github:"https://github.com/Bskn1411"
       }

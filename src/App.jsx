@@ -34,6 +34,7 @@ const App = () => {
 
     const addWindow = (window, id) => {
       const index = windows.length;
+      console.log('Adding window with ID:', id, 'at index:', index);
 
       const newWin = {
         id,

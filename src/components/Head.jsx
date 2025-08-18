@@ -7,7 +7,7 @@ import Settings from './Settings';
 
 const Head = () => {
   const [date, setDate] = React.useState(new Date());
-  const {page,setPage,addWindow} = React.useContext(MainContext);
+  const {page,setPage,addWindow,setWindows} = React.useContext(MainContext);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -33,7 +33,10 @@ const Head = () => {
         }}>Contact</li>
       </ul>
       <p className='text-white text-[18px] ByteBounce cursor-pointer'>
-        <span className='hover:text-orange-300' onClick={() => setPage('')}>~/home</span>
+        <span className='hover:text-orange-300' onClick={() => {
+          setWindows([]);
+          setPage('')
+        }}>~/home</span>
         <span className='hover:text-orange-300'>{page?'/' + page:''}</span>
       </p>
       <ul className='flex justify-center items-center flex-row gap-2 px-3 text-white text-[17px] ByteBounce'>

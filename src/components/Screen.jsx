@@ -1,7 +1,8 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import MainContext, { ContainerContext } from '../context/mainContext';
 import { desktop } from '../libs/desktop';
 import Folder from './Folder';
+import NpmCard from './NpmCard';
 
 const Screen = () => {
   const { wallpaper, page, setPage , handleDrag } = React.useContext(MainContext);
@@ -63,14 +64,15 @@ const Screen = () => {
                 zIndex: index + 1
               }}
             >
-              <div className='w-full absolute top-2 cursor-grab active:cursor-grabbing z-1 opacity-0' title='drag'
+              {/* <div className='w-full absolute top-2 cursor-grab active:cursor-grabbing opacity-0 z-1' title='drag'
                   onMouseDown={(e) => handleDrag(e, id)}
                   onTouchStart={(e) => handleDrag(e, id)}
-              >grab</div>
+              >grab</div> */}
               {win.comp}
             </div>
           );
         })}
+        
       </div>
   );
 };
