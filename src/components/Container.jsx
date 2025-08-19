@@ -24,7 +24,7 @@ const Container = ({children,title,id}) => {
   },[])
   return (
     <ContainerContext.Provider value={{isMobile,setMobile:setIsMobile}}>
-        <div className={` ${full ? 'h-[98%] w-[90%]' : isMobile ? `w-[300px] h-[90%]` : 'h-[90%] w-[500px]'} bg-gray-800 text-white p-2 rounded-xl flex justify-start items-center flex-col gap-2`}>
+        <div className={` ${full ? 'h-[98%] w-[90%]' : isMobile ? `w-[300px] h-[90%]` : 'h-[90%] w-[500px]'} bg-gray-800 text-white p-2 rounded-xl flex justify-start items-center flex-col gap-2 absolute`}>
           <div className={`flex justify-between items-center border-b border-gray-600 px-3 w-full top-0 relative`}>
             <h1 className='text-lg ByteBounce '>/{title}</h1>
             <div className='absolute opacity-0 w-full top-0 left-0 hover:cursor-grab active:cursor-grabbing'

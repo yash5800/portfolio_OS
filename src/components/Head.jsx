@@ -4,6 +4,7 @@ import MainContext from '../context/mainContext';
 import About from './About';
 import Contact from './Contact';
 import Settings from './Settings';
+import Info from './Info';
 
 const Head = () => {
   const [date, setDate] = React.useState(new Date());
@@ -19,7 +20,10 @@ const Head = () => {
     <div className='w-full bg-gray-800 flex justify-between items-center max-sm:flex-col px-2 relative'>
       <ul className='flex justify-center items-center flex-row gap-3 px-3 mt-1 text-white text-[19px] ByteBounce'>
         <img src="icon.webp" alt="pic" className='w-[25px] cursor-pointer rounded-full max-sm:absolute max-sm:w-[40px] max-sm:top-5 max-sm:left-5 hover:scale-110'
-         onClick={() => {}}
+         onClick={() => {
+          const id = Date.now();
+          addWindow(<Info id={id} />, id);
+         }}
          draggable={false}
          onContextMenu={(e) => e.preventDefault()} // disable right click
          />

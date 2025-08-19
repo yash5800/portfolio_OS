@@ -5,12 +5,12 @@ import Folder from './Folder';
 import NpmCard from './NpmCard';
 
 const Screen = () => {
-  const { wallpaper, page, setPage , handleDrag } = React.useContext(MainContext);
+  const { wallpaper } = React.useContext(MainContext);
   const [folder, setFolder] = React.useState('projects');
   const { windows, order, addWindow} = React.useContext(MainContext);
 
   return (
-    <div className='w-full h-full bg-gray-900 rounded-t-2xl relative flex justify-center items-center overflow-hidden'>
+    <div className='w-full h-full bg-gray-900 rounded-t-2xl relative  flex justify-center items-center overflow-hidden'>
       <img
         src={`wallpapers/${wallpaper}`}
         alt="Screen"
@@ -45,35 +45,24 @@ const Screen = () => {
         </div>
       </div>
 
-      {/* Open windows */}
-      {/* {page === 'settings' && <Settings />}
-      {page === 'about' && <About />}
-      {page === 'contact' && <Contact />}
-      {folder && page === 'folder' && <Folder foldertab={folder} />} */}
-      
         {order.map((id, index) => {
           const win = windows.find((w) => w.id === id);
           if (!win) return null;
           return (
             <div
               key={id}
-              className={` h-full w-full absolute`}
+              className={' h-full w-full fixed'}
               style={{
                 top: win.top ?? 100,
                 left: win.left ?? 100,
                 zIndex: index + 1
               }}
             >
-              {/* <div className='w-full absolute top-2 cursor-grab active:cursor-grabbing opacity-0 z-1' title='drag'
-                  onMouseDown={(e) => handleDrag(e, id)}
-                  onTouchStart={(e) => handleDrag(e, id)}
-              >grab</div> */}
               {win.comp}
             </div>
           );
         })}
-        
-      </div>
+    </div>
   );
 };
 
