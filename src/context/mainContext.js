@@ -1,23 +1,33 @@
 import React, { createContext } from "react";
 
-const MainContext = React.createContext({
-  wallpaper: '',
-  setWallpaper: () => {},
-  page: '',
-  setPage: () => {},
+const MainContext = createContext({
   windows: [],
-  setWindows: () => {},
-  order: [],
-  setOrder: () => {},
-  addWindow: () => {},
-  bringToFront: () => {},
-  removeWindow: () => {},
-  handleDrag: () => {},
+  focusedId: null,
+  isMobile: false,
+  openApp: () => {},
+  closeWindow: () => {},
+  focusWindow: () => {},
+  minimizeWindow: () => {},
+  restoreWindow: () => {},
+  toggleMaximize: () => {},
+  moveWindow: () => {},
+  resizeWindow: () => {},
+  windowsForApp: () => [],
+  closeAllWindows: () => {},
+  spotlightOpen: false,
+  setSpotlightOpen: () => {},
+  settings: { wallpaper: "arcade", accent: "cyan", reduceMotion: false, crt: true },
+  setWallpaper: () => {},
+  setAccent: () => {},
+  setReduceMotion: () => {},
+  setCrt: () => {},
+  setRetro: () => {},
+  setSound: () => {},
+  setShowDock: () => {},
+  setBootEnabled: () => {},
+  setLight: () => {},
+  canInstall: false,
+  promptInstall: async () => false,
 });
-
-export const ContainerContext = createContext({
-    isMobile: false,
-    setMobile:()=>{}
-})
 
 export default MainContext;

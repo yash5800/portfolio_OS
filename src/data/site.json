@@ -1,0 +1,96 @@
+{
+  "identity": {
+    "display": "YASWANTH KIRAN",
+    "handle": "yash5800",
+    "role": "Full-stack developer",
+    "host": "yash5800@portfolio",
+    "status": "open to work",
+    "site": {
+      "label": "pixelify.me",
+      "href": "https://pixelify.me",
+      "logo": "brand/pixelify-512.png"
+    }
+  },
+  "boot": {
+    "lines": [
+      "PXL-BIOS v2.6 · checking memory ......... ok",
+      "mount /dev/portfolio ................... ok",
+      "start x11 / window manager ............. ok",
+      "login: guest · session ready"
+    ],
+    "hint": "click anywhere to skip"
+  },
+  "desktop": {
+    "icons": [
+      { "id": "home", "label": "Home", "icon": "home", "action": { "type": "app", "app": "home" } },
+      { "id": "projects", "label": "Projects", "icon": "projects", "action": { "type": "app", "app": "projects" } },
+      { "id": "packages", "label": "Packages", "icon": "packages", "action": { "type": "app", "app": "packages" } },
+      { "id": "terminal", "label": "Terminal", "icon": "terminal", "action": { "type": "app", "app": "terminal" } },
+      { "id": "finder", "label": "Finder", "icon": "folder", "action": { "type": "app", "app": "finder" } },
+      { "id": "games", "label": "Arcade", "icon": "gamepad", "action": { "type": "app", "app": "games" } },
+      { "id": "stack-atlas", "label": "Stack Atlas", "icon": "aperture", "action": { "type": "app", "app": "stack-atlas" } },
+      { "id": "timeline", "label": "Project Timeline", "icon": "clock", "action": { "type": "app", "app": "timeline" } },
+      { "id": "about", "label": "About", "icon": "about", "action": { "type": "app", "app": "about" } },
+      { "id": "contact", "label": "Contact", "icon": "contact", "action": { "type": "app", "app": "contact" } },
+      {
+        "id": "pixelify",
+        "label": "pixelify.me",
+        "icon": "brand",
+        "image": "brand/pixelify-512.png",
+        "action": { "type": "link", "href": "https://pixelify.me" }
+      }
+    ]
+  },
+  "dock": {
+    "items": [
+      { "type": "app", "app": "home" },
+      { "type": "app", "app": "projects" },
+      { "type": "app", "app": "packages" },
+      { "type": "app", "app": "terminal" },
+      { "type": "app", "app": "about" },
+      { "type": "app", "app": "contact" },
+      { "type": "app", "app": "settings" },
+      { "type": "app", "app": "finder" },
+      { "type": "app", "app": "browser" },
+      { "type": "app", "app": "editor" },
+      { "type": "app", "app": "monitor" },
+      { "type": "app", "app": "games" },
+      { "type": "divider" },
+      {
+        "type": "link",
+        "label": "pixelify.me",
+        "icon": "brand",
+        "image": "brand/pixelify-512.png",
+        "href": "https://pixelify.me"
+      },
+      {
+        "type": "link",
+        "label": "GitHub",
+        "icon": "github",
+        "href": "https://github.com/yash5800"
+      }
+    ]
+  },
+  "home": {
+    "eyebrow": "// portfolio.os — guest session",
+    "headline": "I build interfaces that feel alive.",
+    "intro": "Full-stack developer working across React, Node and everything in between. I like fast interfaces, playful details and shipping things people actually use. This desktop is the portfolio: open a window, poke around, or drop into the terminal.",
+    "featuredLabel": "featured builds",
+    "stackLabel": "stack",
+    "stack": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "React Native",
+      "Tailwind",
+      "MongoDB",
+      "Python",
+      "Git"
+    ],
+    "shortcuts": [
+      { "keys": ["Ctrl", "Space"], "label": "application launcher" },
+      { "keys": ["Ctrl", "W"], "label": "close window" },
+      { "keys": ["Esc"], "label": "dismiss" }
+    ]
+  }
+}

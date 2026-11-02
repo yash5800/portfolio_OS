@@ -1,0 +1,36 @@
+{
+  "default": "arcade",
+  "items": [
+    { "id": "arcade", "name": "Arcade", "type": "image", "src": "wallpapers/3.webp" },
+    { "id": "invader", "name": "Invader", "type": "image", "src": "wallpapers/4.webp" },
+    { "id": "neon-city", "name": "Neon City", "type": "image", "src": "wallpapers/1.webp" },
+    { "id": "pixel-meadow", "name": "Pixel Meadow", "type": "image", "src": "wallpapers/2.webp" },
+    { "id": "monsoon", "name": "Monsoon", "type": "image", "src": "wallpapers/5.webp" },
+    { "id": "quiet-dusk", "name": "Quiet Dusk", "type": "image", "src": "wallpapers/6.webp" },
+    { "id": "sunset", "name": "Sunset", "type": "image", "src": "wallpapers/7.webp" },
+    {
+      "id": "phosphor",
+      "name": "Phosphor",
+      "type": "gradient",
+      "value": "radial-gradient(90% 90% at 18% 10%, rgba(34, 211, 238, 0.22) 0%, transparent 55%), radial-gradient(70% 80% at 88% 85%, rgba(163, 230, 53, 0.12) 0%, transparent 60%), linear-gradient(160deg, #05090f 0%, #071019 55%, #03060a 100%)"
+    },
+    {
+      "id": "midnight",
+      "name": "Midnight",
+      "type": "gradient",
+      "value": "radial-gradient(80% 90% at 20% 10%, #1e293b 0%, transparent 60%), radial-gradient(70% 80% at 85% 90%, #312e81 0%, transparent 55%), linear-gradient(160deg, #02040a 0%, #060912 55%, #020308 100%)"
+    },
+    {
+      "id": "embers",
+      "name": "Embers",
+      "type": "gradient",
+      "value": "radial-gradient(80% 90% at 15% 100%, #7c2d12 0%, transparent 55%), radial-gradient(70% 80% at 90% 5%, #4c1d95 0%, transparent 55%), linear-gradient(150deg, #0b0508 0%, #170a10 55%, #080407 100%)"
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "type": "gradient",
+      "value": "radial-gradient(90% 120% at 12% 0%, #1d3f8f 0%, transparent 55%), radial-gradient(80% 100% at 95% 18%, #6d28d9 0%, transparent 58%), radial-gradient(120% 120% at 60% 105%, #0f766e 0%, transparent 60%), linear-gradient(160deg, #060a18 0%, #0b1224 45%, #05070f 100%)"
+    }
+  ]
+}

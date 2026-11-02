@@ -1,0 +1,12 @@
+[
+  {
+    "name": "@yash580o/full-pad",
+    "install": "npm install @yash580o/full-pad",
+    "description": "@yash580o/full-pad is a lightweight npm package for padding strings with a given character. It replaces spaces with padded characters and also adds padding to both ends of the string.",
+    "usage": "const fullPad = require('@yash580o/full-pad');\n// Example 1: Pad with '*', 3 times\nconsole.log(fullPad(\"hello world\", \"*\", 3));\n// Output: ***hello***world***\n\n// Example 2: Pad with '-', 2 times\nconsole.log(fullPad(\"foo bar\", \"-\", 2));\n// Output: --foo--bar--\n\n// Example 3: No padding\nconsole.log(fullPad(\"test\", \"\", 0));\n// Output: test",
+    "npmUrl": "https://www.npmjs.com/package/@yash580o/full-pad",
+    "downloadsBadge": "https://img.shields.io/npm/dt/@yash580o/full-pad",
+    "version": "1.0.0",
+    "tags": ["utility", "string", "padding"]
+  }
+]

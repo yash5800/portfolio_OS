@@ -1,0 +1,83 @@
+[
+  {
+    "id": "home",
+    "title": "Home",
+    "icon": "home",
+    "tint": ["#22d3ee", "#0e7490"],
+    "dock": true,
+    "size": { "width": 860, "height": 610 },
+    "minSize": { "width": 560, "height": 420 }
+  },
+  {
+    "id": "projects",
+    "title": "Projects",
+    "icon": "grid",
+    "image": "items/pixel-art-folder-icon.webp",
+    "tint": ["#fbbf24", "#b45309"],
+    "dock": true,
+    "size": { "width": 1010, "height": 660 },
+    "minSize": { "width": 700, "height": 440 }
+  },
+  {
+    "id": "packages",
+    "title": "Packages",
+    "icon": "box",
+    "image": "items/pixel-art-blue-folder-icon.webp",
+    "tint": ["#22d3ee", "#0f766e"],
+    "dock": true,
+    "size": { "width": 900, "height": 610 },
+    "minSize": { "width": 560, "height": 400 }
+  },
+  {
+    "id": "terminal",
+    "title": "Terminal",
+    "icon": "terminal",
+    "tint": ["#1f2a3d", "#060a12"],
+    "dock": true,
+    "size": { "width": 760, "height": 480 },
+    "minSize": { "width": 460, "height": 300 }
+  },
+  {
+    "id": "about",
+    "title": "About",
+    "icon": "user",
+    "tint": ["#a3e635", "#3f6212"],
+    "dock": true,
+    "size": { "width": 800, "height": 640 },
+    "minSize": { "width": 520, "height": 420 }
+  },
+  {
+    "id": "contact",
+    "title": "Contact",
+    "icon": "mail",
+    "tint": ["#f472b6", "#9d174d"],
+    "dock": true,
+    "size": { "width": 720, "height": 560 },
+    "minSize": { "width": 480, "height": 380 }
+  },
+  {
+    "id": "settings",
+    "title": "Settings",
+    "icon": "settings",
+    "tint": ["#94a3b8", "#334155"],
+    "dock": true,
+    "size": { "width": 900, "height": 620 },
+    "minSize": { "width": 620, "height": 440 }
+  },
+  { "id": "finder", "title": "Finder", "icon": "folder", "tint": ["#60a5fa", "#1d4ed8"], "dock": true, "size": { "width": 860, "height": 580 }, "minSize": { "width": 540, "height": 380 } },
+  { "id": "browser", "title": "Browser", "icon": "globe", "tint": ["#38bdf8", "#0369a1"], "dock": true, "size": { "width": 900, "height": 600 }, "minSize": { "width": 560, "height": 400 } },
+  { "id": "editor", "title": "Code Editor", "icon": "code", "tint": ["#818cf8", "#4338ca"], "dock": true, "size": { "width": 900, "height": 620 }, "minSize": { "width": 560, "height": 400 } },
+  { "id": "monitor", "title": "System Monitor", "icon": "activity", "tint": ["#34d399", "#047857"], "dock": true, "size": { "width": 800, "height": 560 }, "minSize": { "width": 500, "height": 380 } },
+  { "id": "games", "title": "Arcade", "icon": "gamepad", "tint": ["#f472b6", "#9d174d"], "dock": true, "size": { "width": 850, "height": 620 }, "minSize": { "width": 520, "height": 420 } },
+  { "id": "stack-atlas", "title": "Stack Atlas", "icon": "aperture", "tint": ["#38bdf8", "#4338ca"], "size": { "width": 880, "height": 620 }, "minSize": { "width": 560, "height": 420 } },
+  { "id": "timeline", "title": "Project Timeline", "icon": "clock", "tint": ["#fbbf24", "#c2410c"], "size": { "width": 900, "height": 620 }, "minSize": { "width": 560, "height": 420 } },
+  {
+    "id": "package",
+    "title": "Package",
+    "icon": "box",
+    "tint": ["#22d3ee", "#0f766e"],
+    "hidden": true,
+    "size": { "width": 680, "height": 620 },
+    "minSize": { "width": 460, "height": 380 }
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "name": "Yaswanth Kiran",
+  "handle": "yash5800",
+  "role": "Full-stack developer & interface tinkerer",
+  "avatar": "items/profile.jpg",
+  "location": "India",
+  "email": "yaswanthjk580@gmail.com",
+  "bio": "I'm a developer who loves building things that feel good to use — fast interfaces, playful details and products that solve real problems. This desktop is a small playground of those ideas: React, Tailwind, a lot of glass and a little bit of terminal nostalgia.",
+  "stats": [
+    { "label": "Projects shipped", "value": "9+" },
+    { "label": "npm packages", "value": "1" },
+    { "label": "Years building", "value": "3" }
+  ],
+  "skills": {
+    "Languages": ["Python", "C", "Java", "JavaScript"],
+    "Frameworks": ["React.js", "Next.js", "Node.js", "React Native", "Tailwind CSS"],
+    "Tools": ["Git", "Postman", "Vite", "Blender"],
+    "Databases": ["MongoDB", "SQL"],
+    "Exploring": ["AI agents", "Machine learning", "Product design"]
+  },
+  "socials": [
+    {
+      "id": "github",
+      "label": "GitHub",
+      "handle": "@yash5800",
+      "href": "https://github.com/yash5800",
+      "icon": "github"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "handle": "A. Yaswanth Kiran",
+      "href": "https://www.linkedin.com/in/alaparthi-yaswanth-kiran",
+      "icon": "linkedin"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "handle": "yaswanthjk580@gmail.com",
+      "href": "mailto:yaswanthjk580@gmail.com",
+      "icon": "mail"
+    },
+    {
+      "id": "npm",
+      "label": "npm",
+      "handle": "@yash580o",
+      "href": "https://www.npmjs.com/~yash580o",
+      "icon": "npm"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "pixelify.me",
+  "short_name": "pixelify",
+  "description": "A handcrafted desktop portfolio — projects, packages and a working terminal.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#04060b",
+  "theme_color": "#05070c",
+  "categories": ["portfolio", "productivity", "developer"],
+  "icons": [
+    {
+      "src": "brand/pixelify-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "brand/pixelify-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "brand/pixelify-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
